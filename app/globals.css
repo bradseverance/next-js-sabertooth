@@ -28,7 +28,7 @@ header {
 header .logo {
   display: flex;
   align-items: center;
-  background-color: #7a9a01;
+  background-color: #7A9A01;
   color: #fff;
   padding: 0;
   margin-right: 5px;
@@ -71,7 +71,6 @@ ul.bulleted-list {
 }
 
 ul.bulleted-list li {
-  margin-bottom: 0.5em;
 }
 
 ul.bulleted-list a {
