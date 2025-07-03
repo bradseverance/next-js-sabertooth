@@ -16,41 +16,6 @@ body {
   padding-bottom: 40px; /* for footer spacing */
 }
 
-/* Header */
-header {
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #ccc;
-  display: flex;
-  align-items: center;
-}
-
-header .logo {
-  display: flex;
-  align-items: center;
-  background-color: #7A9A01;
-  color: #fff;
-  padding: 0;
-  margin-right: 5px;
-  font-weight: bold;
-  height: 90px;
-  width: 305px;
-}
-
-.logo #logo-image {
-    content: url(/PW-syracuse-logo.png);
-    background-repeat: no-repeat;
-    background-size: inherit;
-    display: inline-block;
-    margin-left: 10px;
-}
-
-#header-right-container {
-  background: #B1C273;
-  flex: 1;
-  height: 90px;
-}
-
 /* Main Content */
 main {
   padding: 30px 20px;
@@ -78,21 +43,6 @@ ul.bulleted-list a {
 ul.bulleted-list a:hover {
   text-decoration: none;
 }
-
-/* Footer */
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #97999d;
-  color: #fff;
-  text-align: right;
-  font-size: .9rem;
-  padding: 5px 15px;
-  border-top: 2px solid #666;
-}
-
 
 @media (prefers-color-scheme: dark) {
   html {

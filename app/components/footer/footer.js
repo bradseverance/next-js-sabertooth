@@ -1,6 +1,8 @@
+import footerClasses from './footer.module.css'
+
 export default function Footer() {
     return (
-        <footer>
+        <footer className={footerClasses.footer}>
         POLYWOOD&reg; Saber Tooth v 1.1 |
         Git Data [Branch: next-js |
         Commit Hash: 5589ddc63f24aadc93ffac4f71524295f5ae9b37 |
