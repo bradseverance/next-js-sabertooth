@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
         <li><Link href="/materials/bill-of-materials-viewer">Bill of Materials Viewer</Link></li>
         <li><Link href="/returns/returns-management">Returns Management</Link></li>
         <li><Link href="/labels/print-labels">Print Labels</Link></li>
+        <li><Link href="/settings/persistent-increment-list">List Persistent Increments</Link></li>
       </ul>
     </>
   );
