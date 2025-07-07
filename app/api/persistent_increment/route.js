@@ -6,5 +6,5 @@ export async function GET() {
   const [persistentIncrements] = await conn.query('SELECT increment_name, increment FROM persistent_increment');
   await conn.end();
 
-  return Response.json(persistentIncrements);
+  return Response.json(persistentIncrements); 
 }
