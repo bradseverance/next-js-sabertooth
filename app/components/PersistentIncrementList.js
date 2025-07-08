@@ -1,6 +1,6 @@
 export default async function PersistentIncrementList() {
     await new Promise((resolve) => setTimeout(resolve, 2000))
-  const response = await fetch('http://localhost:3000/api/persistent_increment', {
+  const response = await fetch(`${process.env.API}persistent_increment`, {
     cache: 'no-store'
   })
 
