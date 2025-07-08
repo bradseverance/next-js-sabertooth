@@ -1,0 +1,126 @@
+/* spinner */
+.spinner {
+    padding: 10px 0;
+}
+
+.spinner::after {
+    content: '';
+    display: block;
+    border-color: #f3f3f3;
+    border-top-color: #85a75b;
+    border-style: solid;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+.spinner.large::after {
+    border-width: 10px;
+    border-top-width: 10px;
+    width: 60px;
+    height: 60px;
+}
+
+.spinner.medium::after {
+    border-width: 5px;
+    border-top-width: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.spinner.small::after {
+    border-width: 3px;
+    border-top-width: 3px;
+    width: 15px;
+    height: 15px;
+}
+
+.spinner.centered::after {
+    margin: 0 auto;
+}
+
+.spinner.centered-within::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.spinner.small.centered-within::after {
+    margin: -10px auto;
+}
+
+.spinner.medium.centered-within::after {
+    margin: -20px auto;
+}
+
+.spinner.right::after {
+    margin: 0 0 0 auto;
+}
+
+.spinner-full-page {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 99999999;
+}
+
+.loading-overlay {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 99999999;
+}
+
+.loading-overlay.within {
+    background-color: rgba(255,255,255,0.9) !important;
+}
+
+.loading-overlay-parent {
+    position: relative;
+}
+
+.spinner-full-page::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    border-width: 10px;
+    border-top-width: 10px;
+    width: 60px;
+    height: 60px;
+    border-color: #f3f3f3;
+    border-top-color: #85a75b;
+    border-style: solid;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+.spinner-button::after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 15px;
+    margin: auto;
+    border-width: 3px;
+    border-top-width: 3px;
+    width: 12px;
+    height: 12px;
+    border-color: #fff;
+    border-top-color: transparent;
+    border-style: solid;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
