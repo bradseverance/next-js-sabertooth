@@ -1,4 +1,4 @@
-// app/api/users/route.js
+// app/api/persistent-increment/route.js
 import { getConnection } from '@/utilities/db';
 
 export async function GET() {

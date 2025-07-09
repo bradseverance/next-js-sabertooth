@@ -15,6 +15,7 @@ export default function Home() {
         <li><Link href="/returns/returns-management">Returns Management</Link></li>
         <li><Link href="/labels/print-labels">Print Labels</Link></li>
         <li><Link href="/settings/persistent-increment-list">List Persistent Increments</Link></li>
+        <li><Link href="/settings/pallet">Pallets</Link></li>
       </ul>
     </>
   );

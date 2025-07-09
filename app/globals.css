@@ -54,11 +54,9 @@ ul.bulleted-list a:hover {
   background-color: #fff;
 }
 
-/* Define 9 columns for the table layout */
 .grid-table > .header,
 .grid-table > .row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
   padding: 0 8px;
 }
