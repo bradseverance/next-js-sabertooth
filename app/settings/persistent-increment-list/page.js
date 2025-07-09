@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import PersistentIncrementList from '@/app/components/PersistentIncrementList'
+import PersistentIncrementList from '@/app/settings/persistent-increment-list/PersistentIncrementList'
 import Fallback from '@/app/components/suspense-fallback/suspense-fallback'
 
 export default function Page() {
@@ -11,7 +11,6 @@ export default function Page() {
           <div className="cell">Persistent Increment Name</div>
           <div className="cell">Increment</div>
         </div>
-
         <Suspense fallback={<Fallback />}>
           <PersistentIncrementList />
         </Suspense>

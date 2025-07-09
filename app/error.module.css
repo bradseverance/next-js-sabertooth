@@ -1,0 +1,28 @@
+.header {
+    text-align: center;
+}
+
+.header img {
+    width: 100px;
+}
+
+.header h1 {
+    color: #000;
+}
+
+.main p {
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.main-header {
+    font-weight: bold;
+}
+
+.message {
+    font-style: italic;
+}
+
+.stack-trace {
+    white-space: pre-line;
+}
