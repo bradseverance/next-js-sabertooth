@@ -5,8 +5,8 @@ import css from './page.module.css'
 import Link from 'next/link'
 import { cookies } from 'next/headers'
 
-export default function Page() {
-  const cookieStore = cookies()
+export default async function Page() {
+  const cookieStore = await cookies()
   const flashCookie = cookieStore.get('flash')
   let flash = null
 

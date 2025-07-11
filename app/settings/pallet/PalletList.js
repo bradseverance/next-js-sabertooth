@@ -20,7 +20,10 @@ export default async function PalletList() {
                 <div className="cell">{pallet.width}</div>
                 <div className="cell">{pallet.height}</div>
                 <div className="cell">{pallet.weight}</div>
-                <div className="cell"></div>
+                <div className="cell">
+                    <span className={`material-icons md-24 add-10-right ${pallet.active ? 'yellow' : 'gray'}`}>lightbulb</span>
+                    <span className="material-icons md-24 red">cancel</span>               
+                </div>
                 </div>
             ))}
         </>

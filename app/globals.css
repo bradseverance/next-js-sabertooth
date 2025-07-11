@@ -61,6 +61,7 @@ ul.bulleted-list a:hover {
   width: 100%;
   border: 1px solid #ddd;
   background-color: #fff;
+  font-size: 1.1rem;
 }
 
 .grid-table > .header,
@@ -73,7 +74,6 @@ ul.bulleted-list a:hover {
 /* Header Style */
 .grid-table > .header {
   font-weight: bold;
-  font-size: 1.1rem;
   color: #036;
   background-color: #eee;
   border-bottom: 1px solid #ddd;
@@ -181,6 +181,13 @@ ul.bulleted-list a:hover {
 .material-icons.md-48 { font-size: 48px; }
 
 .material-icons.green { color: #85a75b; }
+.material-icons.red { color: #BB271A }
+.material-icons.yellow { color: #F9DB78 }
+.material-icons.gray { color: #999999 }
+
+.material-icons.add-10-right {
+    margin-right: 10px;
+}
 
 .flex-container {
     margin: 0;
