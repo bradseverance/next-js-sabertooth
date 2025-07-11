@@ -37,6 +37,7 @@ export default async function Page() {
       <div className="grid-table">
         <div className={`header ${css.header}`}>
           <div className="cell">ID</div>
+          <div className="cell">Name</div>
           <div className="cell">Length</div>
           <div className="cell">Width</div>
           <div className="cell">Height</div>

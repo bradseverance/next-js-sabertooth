@@ -16,6 +16,7 @@ export default async function PalletList() {
             {palletList.map(pallet => (
                 <div key={pallet.idx} className={`row ${css.row}`}>
                 <div className="cell"><a href={`/settings/pallet/${pallet.idx}`}>{pallet.idx}</a></div>
+                <div className="cell">{pallet.pallet_name}</div>
                 <div className="cell">{pallet.length}</div>
                 <div className="cell">{pallet.width}</div>
                 <div className="cell">{pallet.height}</div>
