@@ -3,7 +3,6 @@
 import css from './error.module.css'
 
 export default function Error({ error, reset }) {
-    console.log(error);
     return (
         <>
         <header className={css.header}>

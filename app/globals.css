@@ -16,6 +16,15 @@ body {
   padding-bottom: 40px; /* for footer spacing */
 }
 
+a {
+	color: #0074A2;
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 /* Main Content */
 main {
   padding: 30px 20px;
@@ -81,11 +90,145 @@ ul.bulleted-list a:hover {
 
 /* Cell Style */
 .grid-table .cell {
-  padding: 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+    padding: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
+
+
+/* Form Style */
+.save-form-bar {
+    position: sticky;
+    top: 0;
+    text-align: right;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    margin: 0 0 30px 0;
+    border: 1px solid #988753;
+    background: #fdfaa4;
+    height: 68px;
+}
+
+.save-form-bar input {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 1.3em;
+    padding: .2em .4em;
+    width: auto;
+}
+
+.saber-form input {
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.saber-form input[type='text'] {
+    width: 100%;
+}
+
+.saber-form input[type='text'], .saber-form input[type='number'], .saber-form select {
+    box-sizing: border-box;
+    padding: 0.4em;
+    font-size: 1.25rem;
+}
+
+.saber-form > div.form-container > div.half-width {
+    width: 50%;
+}
+
+.saber-form > div.form-container > div.quarter-width {
+    width: 25%;
+}
+
+.saber-form > div.form-container > div {
+    margin-bottom: 1rem;
+}
+
+.saber-form > div.form-container > div > label {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.saber-form > .form-container > div.checkbox-container {
+    margin-top: 30px;
+}
+
+.saber-form input[type='checkbox'] {
+    border-style: solid;
+    border-width: 1px;
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+    padding: 4px;
+    width: 20px;
+    margin-right: 6px;
+    margin-top: 2px;
+}
+
+.saber-form input[type='checkbox'] + label {
+    display: inline-block !important;
+    position: relative;
+    bottom: 3px;
+    left: 15px;
+}
+
+/* Icons */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.material-icons.green { color: #85a75b; }
+
+.flex-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-right {
+    margin-left: auto;
+}
+
+.icon-link {
+    padding-right: 5px;
+    position: relative;
+    top: 5px;
+}
+
+/* flash message */
+.flash-message {
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.flash-message  p {
+	margin: 0;
+}
+
+.flash-message.success {
+    background: #d0d8ec;
+    border: 1px solid #37529e;
+    color: #37529e;
+}
+
+.flash-message.error {
+	background: #ffcccc;
+	border: 1px solid #c57146;
+	color: #89352a;
+}
+.flash-message.warning {
+	background: #fef4e5;
+	border: 1px solid #f69302;
+	color: #f69302;
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
